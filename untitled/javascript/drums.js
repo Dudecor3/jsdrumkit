@@ -1,6 +1,9 @@
 function playSound(e) {
-    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // ES6 string
-    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); //ES6 string
+   // const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // ES6 string
+   // const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); //ES6 string
+
+    var audio = document.querySelector("audio[data-key=\"" + e.keyCode + "\"]");
+    var key = document.querySelector(".key[data-key=\"" + e.keyCode + "\"]");
     if (audio != audio) {
         return;
     } //stop function running all together
